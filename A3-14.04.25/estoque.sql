@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14/04/2025 às 20:54
+-- Tempo de geração: 14/04/2025 às 22:11
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `produtos` (
   `id` int(11) NOT NULL,
   `nome` varchar(255) NOT NULL,
-  `preco` double NOT NULL,
+  `preco` double DEFAULT NULL,
   `quantidade` int(255) NOT NULL,
   `lote` int(100) NOT NULL,
   `marca` varchar(100) DEFAULT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `preco`, `quantidade`, `lote`, `marca`, `validade`) VALUES
-(9, 'arroz', 4.65, 298, 1, 'Namorado', '2030');
+(9, 'Arroz', 4.65, 295, 1, 'Namorado', '2030');
 
 --
 -- Índices para tabelas despejadas

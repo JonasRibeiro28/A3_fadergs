@@ -464,7 +464,8 @@ public class Listar extends javax.swing.JInternalFrame {
         //passar os dados nos campos da interface para a classe DadosContatos
             DadosContato dc = new DadosContato();
             dc.setId(Integer.parseInt(Campoid.getText()));
-            dc.setNome(Campopreco.getText());
+            dc.setNome(Camponome.getText());//Aqui está o erro, esta vindo o Campopreço
+            dc.setPreco(Campopreco.getText());
             dc.setQuantidade(Campoquantidade.getText());
             dc.setLote(Campolote.getText());
             dc.setMarca(Campomarca.getText());
